@@ -22,11 +22,14 @@
     <button class="justify-self-end" on:click={handleClose}
       ><CrossIcon /></button
     >
-    <p class="text-2xl col-span-2">
-      {message}
-    </p>
+    <div class="text-2xl col-span-2">
+      {@html message}
+    </div>
     {#if isLevelUp}
-      <a class="text-xl underline col-span-2" href="/checkout" on:click={handleClose}
+      <a
+        class="text-xl underline col-span-2"
+        href="/checkout"
+        on:click={handleClose}
         >Contact Your {$developerStats.style} Developer!</a
       >
     {/if}

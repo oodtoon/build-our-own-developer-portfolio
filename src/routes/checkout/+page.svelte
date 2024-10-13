@@ -5,27 +5,18 @@
   import { projects } from "$lib";
   import { developerStats, toast } from "$lib/store";
   import { superForm } from "sveltekit-superforms/client";
-  import SuperDebug from "sveltekit-superforms";
 
   export let data;
-  let skillsNeeded = "";
 
   const { form, enhance, constraints } = superForm(data.form);
 
   function alertUser() {
     $toast = {
       title: "Success!",
-      message:
-        "Thank you for contacting Brody, your dream developer! I will get back to you soon to discuss what you are looking for in a developer!",
+      message: `<p>Thank you for contacting Brody, your dream developer!</p><br/><p>I will get back to you soon to discuss what you are looking for in a developer!</p><br /><p>-If the email you provided is correct.</p>`,
     };
   }
-
-  function handleSendMessage() {
-    alertUser();
-  }
 </script>
-
-<SuperDebug data={$form} />
 
 <FancyTitle>
   <span slot="standard">Checkout to Start Working With Your Dream</span>
@@ -50,6 +41,7 @@
       class="grid grid-cols-4 gap-4 justify-items-stretch top-right-bottom-left-slant h-full w-full bg-black p-10"
       method="POST"
       use:enhance
+      on:submit={alertUser}
     >
       <label
         class="flex gap-2 items-center justify-bewteen text-2xl"
