@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --pixel-size: 8;
+}
+
+html {
+  @apply font-jersey;
+}
+
+@font-face {
+  font-family: "Jersey";
+  src: url("/Jersey_10/Jersey10-Regular.ttf");
+}
+
+.font-jersey {
+  font-family: Jersey;
+}
+
+body {
+  background-color: black;
+}
+
+.top-right-bottom-left-slant {
+  clip-path: polygon(0% 0%, 85% 0%, 100% 15%, 100% 100%, 15% 100%, 0% 85%);
+}
+
+.top-left-bottom-right-slant {
+  clip-path: polygon(20% 0%, 100% 0%, 100% 85%, 85% 100%, 0% 100%, 0% 15%);
+}
+
+.pixel-art {
+  image-rendering: pixelated;
+}
+
+.character {
+  position: relative;
+  overflow: hidden;
+}
+
+.character-walking {
+  width: calc(24px * var(--pixel-size));
+  height: calc(32px * var(--pixel-size));
+  position: relative;
+}
+
+.sprite-sheet {
+  position: absolute;
+}
+
+.sprite-sheet-walking {
+  animation: moveSprite 2s steps(8) infinite;
+  width: calc(400px * var(--pixel-size));
+  left: -140%;
+}
+
+.up {
+  top: 0;
+}
+
+.left {
+  top: calc(-31px * var(--pixel-size));
+}
+
+.down {
+  top: calc(-62px * (var(--pixel-size)));
+}
+
+.right {
+  top: calc(-93px * var(--pixel-size));
+}
+
+@keyframes moveSprite {
+  from {
+    transform: translate3d(0px, 0, 0);
+  }
+  to {
+    transform: translate3d(-61.5%, 0, 0);
+  }
+}
