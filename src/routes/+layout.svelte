@@ -27,6 +27,6 @@
   />
 {/if}
 <Nav />
-<main class="container m-auto text-green-200 grid justify-items-center gap-4">
+<main class="container m-4 text-green-200 grid justify-items-center gap-4 md:m-auto">
   <slot />
 </main>

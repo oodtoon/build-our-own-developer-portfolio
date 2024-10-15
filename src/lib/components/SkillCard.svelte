@@ -7,7 +7,7 @@
   $: skillIcon = skillIcons[skill.id as keyof typeof skillIcons];
 </script>
 
-<div class="h-28 w-28 border-2 border-green-200 border-solid rounded">
+<div class="sm:h-28 sm:w-28 h-20 w-20 border-2 border-green-200 border-solid rounded">
   <a
     href={skill.href}
     class="w-full h-full flex flex-col hover:bg-green-200 hover:text-black"

@@ -26,12 +26,12 @@
     {#if isInDeveloperCart}
       <button
         on:click={removeFromDeveloper}
-        class="bg-green-200 text-black flex items-center justify-center rounded text-sm p-2 border-2 border-green-200 hover:bg-black hover:text-green-200"
+        class="bg-green-200 text-black flex items-center justify-center rounded text-sm sm:p-2 p1 border-2 border-green-200 hover:bg-black hover:text-green-200"
         >Remove From Dev</button
       >
     {:else}
       <button
-        class="bg-green-200 text-black flex items-center justify-center rounded text-sm p-2 border-2 border-green-200 hover:bg-black hover:text-green-200"
+        class="bg-green-200 text-black flex items-center justify-center rounded text-sm sm:p-2 p1 border-2 border-green-200 hover:bg-black hover:text-green-200"
         on:click={addToDeveloper}
       >
         Add To Dev</button

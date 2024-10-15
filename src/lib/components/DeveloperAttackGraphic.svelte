@@ -1,6 +1,7 @@
 <script lang="ts">
   import { developerStats } from "$lib/store";
 
+  export let projectsCompleted: number;
   export let totalProjects: number;
   let exp: number;
 
@@ -14,12 +15,7 @@
       ? "weapon-attack-right"
       : "attack-right";
 
-  $: if ($developerStats.projects) {
-    exp = $developerStats.projects.length / totalProjects;
-  } else {
-    exp = 0 / totalProjects;
-  }
-
+  $: exp = projectsCompleted / totalProjects;
 </script>
 
 <div class="grid items-center">
