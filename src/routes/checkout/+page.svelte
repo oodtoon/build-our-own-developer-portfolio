@@ -1,12 +1,13 @@
 <script lang="ts">
   import FancyTitle from "$lib/components/ui/FancyTitle.svelte";
   import DeveloperAttackGraphic from "$lib/components/DeveloperAttackGraphic.svelte";
-  import Skill from "$lib/components/Skill.svelte";
   import { projects } from "$lib";
   import { developerStats, toast } from "$lib/store";
   import { superForm } from "sveltekit-superforms/client";
+  import SkillsDisplay from "$lib/components/SkillsDisplay.svelte";
 
   export let data;
+  let projectsCompleted: number = 0;
 
   const { form, enhance, constraints } = superForm(data.form);
 
@@ -16,6 +17,12 @@
       message: `<p>Thank you for contacting Brody, your dream developer!</p><br/><p>I will get back to you soon to discuss what you are looking for in a developer!</p><br /><p>-If the email you provided is correct.</p>`,
     };
   }
+
+  $: if ($developerStats.projects.length) {
+    projectsCompleted = $developerStats.projects.length;
+  } else {
+    projectsCompleted = 0;
+  }
 </script>
 
 <FancyTitle>
@@ -23,15 +30,16 @@
   <span slot="fancy">DEVELOPER</span>
 </FancyTitle>
 
-<section class="grid grid-cols-2 gap-6">
+<section class="grid grid-cols-1 gap-6 md:grid-cols-2 m-4">
   <div class="grid">
     <h2 class="text-2xl underline">Your Developer :</h2>
-    <DeveloperAttackGraphic totalProjects={projects.length} />
-    <div class="flex flex-wrap gap-2">
-      {#each $developerStats.skills as skill}
-        <Skill {skill} isInDeveloperCart />
-      {/each}
-    </div>
+    <DeveloperAttackGraphic
+      totalProjects={projects.length}
+      {projectsCompleted}
+    />
+    {#if $developerStats}
+      <SkillsDisplay skills={$developerStats.skills} isInDeveloperCart/>
+    {/if}
   </div>
 
   <div
