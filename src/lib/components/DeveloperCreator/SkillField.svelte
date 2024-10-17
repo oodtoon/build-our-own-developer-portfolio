@@ -6,7 +6,7 @@
   export let skillField: SkillFieldType;
 </script>
 
-<span class="text-2xl flex gap-2"
+<span class="text-2xl flex gap-2 flex-wrap my-2"
   >{skillField.label} :
   {#if $developerStats.skills}
     <DeveloperSkills skills={$developerStats.skills} group={skillField.group} />

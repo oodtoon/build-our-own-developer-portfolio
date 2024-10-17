@@ -1,24 +1,12 @@
 <script lang="ts">
   import DeveloperDisplay from "$lib/components/DeveloperDisplay.svelte";
   import Search from "$lib/components/Search.svelte";
-  import Skill from "$lib/components/Skill.svelte";
   import SkillsDisplay from "$lib/components/SkillsDisplay.svelte";
   import FancyTitle from "$lib/components/ui/FancyTitle.svelte";
   import { techSkills } from "$lib/store";
 
-  const LARGE_SCREEN_SIZE = 1024;
-  const MAX_SKILLS_TO_SHOW = 5;
-
-  let isViewMore: boolean = false;
-
-  let innerWidth: number;
-
-  function toggleTotalSkillsShown() {
-    isViewMore = !isViewMore;
-  }
 </script>
 
-<svelte:window bind:innerWidth />
 
 <FancyTitle>
   <span slot="standard">Build The Developer of Your</span>
