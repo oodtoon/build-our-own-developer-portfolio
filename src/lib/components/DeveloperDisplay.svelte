@@ -6,7 +6,7 @@
   import type { SkillFieldType } from "$lib/types";
   import Button from "./ui/Button.svelte";
   import { developerStats, techSkills } from "$lib/store";
-  import { initialDeveloperStats, skills } from "$lib";
+  import { skills, Developer } from "$lib";
   import Link from "./ui/Link.svelte";
 
   let direction = "right";
@@ -49,14 +49,14 @@
 
   function resetDeveloper() {
     $techSkills = [...skills];
-    $developerStats = { ...initialDeveloperStats };
+    $developerStats = new Developer()
   }
 </script>
 
 <svelte:document on:keydown={moveCharacter} />
 
 <div
-  class="top-right-bottom-left-slant place-self-center rounded h-[36rem] w-96 bg-gradient-to-bl from-yellow-300 via-orange-400 to-pink-600 p-1"
+  class="top-right-bottom-left-slant self-start rounded bg-gradient-to-bl from-yellow-300 via-orange-400 to-pink-600 p-1"
 >
   <div class="grid top-right-bottom-left-slant h-full w-full bg-black p-4">
     <MainInfo />
@@ -68,7 +68,6 @@
     <div class="grid grid-cols-2">
       <DeveloperGraphic {direction} />
       <div class="grid gap-2 place-self-center">
-        
         <Link href="/developer-training">Select Developer</Link>
         <Button eventType="removeLastSkill" on:removeLastSkill={removeLastSkill}
           >Remove Last Skill</Button

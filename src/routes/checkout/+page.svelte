@@ -30,7 +30,7 @@
   <span slot="fancy">DEVELOPER</span>
 </FancyTitle>
 
-<section class="grid grid-cols-1 gap-6 md:grid-cols-2 m-4">
+<section class="grid grid-cols-1 gap-6 md:grid-cols-2 sm:m-4 m-1">
   <div class="grid">
     <h2 class="text-2xl underline">Your Developer :</h2>
     <DeveloperAttackGraphic
@@ -38,7 +38,7 @@
       {projectsCompleted}
     />
     {#if $developerStats}
-      <SkillsDisplay skills={$developerStats.skills} isInDeveloperCart/>
+      <SkillsDisplay skills={$developerStats.skills} />
     {/if}
   </div>
 
@@ -46,7 +46,7 @@
     class="top-right-bottom-left-slant max-w-3xl bg-gradient-to-bl from-yellow-300 via-orange-400 to-pink-600 p-1"
   >
     <form
-      class="grid grid-cols-4 gap-4 justify-items-stretch top-right-bottom-left-slant h-full w-full bg-black p-10"
+      class="grid grid-cols-4 gap-4 justify-items-stretch top-right-bottom-left-slant h-full w-full bg-black sm:p-10 p-4"
       method="POST"
       use:enhance
       on:submit={alertUser}
@@ -58,7 +58,7 @@
         Name
       </label>
       <input
-        class="col-span-3 rounded-lg bg-gray-800 px-2 py-1 text-2xl"
+        class="col-span-4 sm:col-span-3 rounded-lg bg-gray-800 px-2 py-1 text-2xl"
         type="text"
         id="name"
         name="name"
@@ -72,7 +72,7 @@
         >Email
       </label>
       <input
-        class="col-span-3 rounded-lg bg-gray-800 px-2 py-1 text-2xl"
+        class="col-span-4  sm:col-span-3 rounded-lg bg-gray-800 px-2 py-1 text-2xl"
         type="email"
         id="email"
         name="email"
@@ -88,7 +88,7 @@
       </label>
       <textarea
         bind:value={$form.message}
-        class="col-span-3 rounded-lg bg-gray-800 px-2 py-1 w-72 h-56 text-2xl"
+        class="col-span-4 sm:col-span-3 rounded-lg bg-gray-800 px-2 py-1 w-72 h-56 text-2xl"
         id="message"
         name="message"
         {...$constraints.message}

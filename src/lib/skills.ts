@@ -7,6 +7,17 @@ import TypeScriptIcon from "./components/icons/tech/TypeScriptIcon.svelte";
 import HtmlIcon from "./components/icons/tech/HTMLIcon.svelte";
 import TailwindIcon from "./components/icons/tech/TailwindIcon.svelte";
 import CssIcon from "./components/icons/tech/CSSIcon.svelte";
+import AxiosIcon from "./components/icons/tech/AxiosIcon.svelte";
+import DockerIcon from "./components/icons/tech/DockerIcon.svelte";
+import ExpressIcon from "./components/icons/tech/ExpressIcon.svelte";
+import FigmaIcon from "./components/icons/tech/FigmaIcon.svelte";
+import GitHubIcon from "./components/icons/tech/GitHubIcon.svelte";
+import GitIcon from "./components/icons/tech/GitIcon.svelte";
+import MySqlIcon from "./components/icons/tech/MySQLIcon.svelte";
+import ResponsiveIcon from "./components/icons/tech/ResponsiveIcon.svelte";
+import VitestIcon from "./components/icons/tech/VitestIcon.svelte";
+import ZodIcon from "./components/icons/tech/ZodIcon.svelte";
+import MongoDbIcon from "./components/icons/tech/MongoDBIcon.svelte";
 
 export const skills = [
   {
@@ -15,7 +26,7 @@ export const skills = [
     id: "sveltekit",
     experience: "",
     href: "/technology/sveltekit",
-    group: "frameworks"
+    group: "frameworks",
   },
   {
     title: "React",
@@ -23,7 +34,7 @@ export const skills = [
     id: "react",
     experience: "",
     href: "/technology/react",
-    group: "frameworks"
+    group: "frameworks",
   },
   {
     title: "Redux",
@@ -31,7 +42,7 @@ export const skills = [
     id: "redux",
     experience: "",
     href: "/technology/redux",
-    group: "bonuses"
+    group: "bonuses",
   },
   {
     title: "Next.JS",
@@ -42,20 +53,20 @@ export const skills = [
     group: "frameworks",
   },
   {
-    title: "JavaScript",
-    content: "",
-    id: "javascript",
-    experience: "",
-    href: "/technology/javascript",
-    group: "languages"
-  },
-  {
     title: "TypeScript",
     content: "",
     id: "typescript",
     experience: "",
     href: "/technology/typescript",
-    group: "languages"
+    group: "languages",
+  },
+  {
+    title: "JavaScript",
+    content: "",
+    id: "javascript",
+    experience: "",
+    href: "/technology/javascript",
+    group: "languages",
   },
   {
     title: "HTML",
@@ -63,7 +74,7 @@ export const skills = [
     id: "html",
     experience: "",
     href: "/technology/html",
-    group: "languages"
+    group: "languages",
   },
   {
     title: "Tailwind",
@@ -71,7 +82,7 @@ export const skills = [
     id: "tailwind",
     experience: "",
     href: "/technology/tailwind",
-    group: "bonuses"
+    group: "bonuses",
   },
   {
     title: "CSS",
@@ -79,7 +90,95 @@ export const skills = [
     id: "css",
     experience: "",
     href: "/technology/css",
-    group: "bonuses"
+    group: "bonuses",
+  },
+  {
+    title: "gitHub",
+    content: "",
+    id: "github",
+    experience: "",
+    href: "/technology/github",
+    group: "bonuses",
+  },
+  {
+    title: "git",
+    content: "",
+    id: "git",
+    experience: "",
+    href: "/technology/git",
+    group: "bonuses",
+  },
+  {
+    title: "MongoDB",
+    content: "",
+    id: "mongodb",
+    experience: "",
+    href: "/technology/mongodb",
+    group: "databases",
+  },
+  {
+    title: "mySQL",
+    content: "",
+    id: "mysql",
+    experience: "",
+    href: "/technology/mysql",
+    group: "databases",
+  },
+  {
+    title: "express",
+    content: "",
+    id: "express",
+    experience: "",
+    href: "/technology/express",
+    group: "bonuses",
+  },
+  {
+    title: "axios",
+    content: "",
+    id: "axios",
+    experience: "",
+    href: "/technology/axios",
+    group: "bonuses",
+  },
+  {
+    title: "Responsive Layouts",
+    content: "",
+    id: "responsive",
+    experience: "",
+    href: "/technology/responsive",
+    group: "bonuses",
+  },
+  {
+    title: "Vitest",
+    content: "",
+    id: "vitest",
+    experience: "",
+    href: "/technology/vitest",
+    group: "bonuses",
+  },
+  {
+    title: "Zod",
+    content: "",
+    id: "zod",
+    experience: "",
+    href: "/technology/zod",
+    group: "bonuses",
+  },
+  {
+    title: "Docker",
+    content: "",
+    id: "docker",
+    experience: "",
+    href: "/technology/docker",
+    group: "bonuses",
+  },
+  {
+    title: "Figma",
+    content: "",
+    id: "figma",
+    experience: "",
+    href: "/technology/figma",
+    group: "bonuses",
   },
 ];
 
@@ -93,4 +192,15 @@ export const skillIcons = {
   html: HtmlIcon,
   css: CssIcon,
   tailwind: TailwindIcon,
+  axios: AxiosIcon,
+  git: GitIcon,
+  github: GitHubIcon,
+  docker: DockerIcon,
+  express: ExpressIcon,
+  mongodb: MongoDbIcon,
+  mysql: MySqlIcon,
+  vitest: VitestIcon,
+  zod: ZodIcon,
+  responsive: ResponsiveIcon,
+  figma: FigmaIcon,
 };

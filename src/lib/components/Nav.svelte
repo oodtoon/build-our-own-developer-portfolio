@@ -13,7 +13,7 @@
   }
 </script>
 
-<nav class="text-green-200 flex gap-6 p-4 text-2xl">
+<nav class="text-green-200 flex wrap gap-6 p-4 text-2xl">
   {#each links as link}
     <a
       on:click={closeToast}
