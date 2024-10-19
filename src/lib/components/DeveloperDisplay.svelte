@@ -12,10 +12,10 @@
   let direction = "right";
 
   const skillFields: SkillFieldType[] = [
-    { label: "Languages", group: "languages" },
-    { label: "Frameworks", group: "frameworks" },
-    { label: "Databases", group: "databases" },
-    { label: "Bonuses", group: "bonuses" },
+    { label: "Languages", category: "languages" },
+    { label: "Frameworks", category: "frameworks" },
+    { label: "Databases", category: "databases" },
+    { label: "Bonuses", category: "bonuses" },
   ];
 
   function moveCharacter(e: KeyboardEvent) {

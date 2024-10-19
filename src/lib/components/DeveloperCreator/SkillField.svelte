@@ -1,6 +1,6 @@
 <script lang="ts">
   import { developerStats } from "$lib/store";
-  import type { SkillFieldType, SkillType } from "$lib/types";
+  import type { SkillFieldType } from "$lib/types";
   import DeveloperSkills from "./DeveloperSkills.svelte";
 
   export let skillField: SkillFieldType;
@@ -9,6 +9,9 @@
 <span class="text-2xl flex gap-2 flex-wrap my-2"
   >{skillField.label} :
   {#if $developerStats.skills}
-    <DeveloperSkills skills={$developerStats.skills} group={skillField.group} />
+    <DeveloperSkills
+      skills={$developerStats.skills}
+      category={skillField.category}
+    />
   {/if}
 </span>

@@ -4,9 +4,7 @@
   import SkillsDisplay from "$lib/components/SkillsDisplay.svelte";
   import FancyTitle from "$lib/components/ui/FancyTitle.svelte";
   import { techSkills } from "$lib/store";
-
 </script>
-
 
 <FancyTitle>
   <span slot="standard">Build The Developer of Your</span>
@@ -23,7 +21,6 @@
   <div
     class="grid gap-2 place-content-start min-w-full lg:col-start-2 row-start-1"
   >
-    <Search />
     {#if $techSkills}
       <SkillsDisplay skills={$techSkills} />
     {/if}
