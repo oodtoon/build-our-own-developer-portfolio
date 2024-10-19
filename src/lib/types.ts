@@ -4,7 +4,7 @@ export type SkillType = {
   id: string;
   experience: string;
   href: string;
-  group: string;
+  category: string;
 };
 
 export type DeveloperInfoType = {
@@ -19,5 +19,5 @@ export type DeveloperInfoType = {
 
 export type SkillFieldType = {
   label: string;
-  group: string;
+  category: string;
 };

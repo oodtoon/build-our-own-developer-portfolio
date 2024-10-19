@@ -26,7 +26,7 @@ export const skills = [
     id: "sveltekit",
     experience: "",
     href: "/technology/sveltekit",
-    group: "frameworks",
+    category: "frameworks",
   },
   {
     title: "React",
@@ -34,7 +34,7 @@ export const skills = [
     id: "react",
     experience: "",
     href: "/technology/react",
-    group: "frameworks",
+    category: "frameworks",
   },
   {
     title: "Redux",
@@ -42,7 +42,7 @@ export const skills = [
     id: "redux",
     experience: "",
     href: "/technology/redux",
-    group: "bonuses",
+    category: "bonuses",
   },
   {
     title: "Next.JS",
@@ -50,7 +50,7 @@ export const skills = [
     id: "nextjs",
     experience: "",
     href: "/technology/nextjs",
-    group: "frameworks",
+    category: "frameworks",
   },
   {
     title: "TypeScript",
@@ -58,7 +58,7 @@ export const skills = [
     id: "typescript",
     experience: "",
     href: "/technology/typescript",
-    group: "languages",
+    category: "languages",
   },
   {
     title: "JavaScript",
@@ -66,7 +66,7 @@ export const skills = [
     id: "javascript",
     experience: "",
     href: "/technology/javascript",
-    group: "languages",
+    category: "languages",
   },
   {
     title: "HTML",
@@ -74,7 +74,7 @@ export const skills = [
     id: "html",
     experience: "",
     href: "/technology/html",
-    group: "languages",
+    category: "languages",
   },
   {
     title: "Tailwind",
@@ -82,7 +82,7 @@ export const skills = [
     id: "tailwind",
     experience: "",
     href: "/technology/tailwind",
-    group: "bonuses",
+    category: "bonuses",
   },
   {
     title: "CSS",
@@ -90,7 +90,7 @@ export const skills = [
     id: "css",
     experience: "",
     href: "/technology/css",
-    group: "bonuses",
+    category: "bonuses",
   },
   {
     title: "gitHub",
@@ -98,7 +98,7 @@ export const skills = [
     id: "github",
     experience: "",
     href: "/technology/github",
-    group: "bonuses",
+    category: "bonuses",
   },
   {
     title: "git",
@@ -106,7 +106,7 @@ export const skills = [
     id: "git",
     experience: "",
     href: "/technology/git",
-    group: "bonuses",
+    category: "bonuses",
   },
   {
     title: "MongoDB",
@@ -114,7 +114,7 @@ export const skills = [
     id: "mongodb",
     experience: "",
     href: "/technology/mongodb",
-    group: "databases",
+    category: "databases",
   },
   {
     title: "mySQL",
@@ -122,7 +122,7 @@ export const skills = [
     id: "mysql",
     experience: "",
     href: "/technology/mysql",
-    group: "databases",
+    category: "databases",
   },
   {
     title: "express",
@@ -130,7 +130,7 @@ export const skills = [
     id: "express",
     experience: "",
     href: "/technology/express",
-    group: "bonuses",
+    category: "bonuses",
   },
   {
     title: "axios",
@@ -138,7 +138,7 @@ export const skills = [
     id: "axios",
     experience: "",
     href: "/technology/axios",
-    group: "bonuses",
+    category: "bonuses",
   },
   {
     title: "Responsive Layouts",
@@ -146,7 +146,7 @@ export const skills = [
     id: "responsive",
     experience: "",
     href: "/technology/responsive",
-    group: "bonuses",
+    category: "bonuses",
   },
   {
     title: "Vitest",
@@ -154,7 +154,7 @@ export const skills = [
     id: "vitest",
     experience: "",
     href: "/technology/vitest",
-    group: "bonuses",
+    category: "bonuses",
   },
   {
     title: "Zod",
@@ -162,7 +162,7 @@ export const skills = [
     id: "zod",
     experience: "",
     href: "/technology/zod",
-    group: "bonuses",
+    category: "bonuses",
   },
   {
     title: "Docker",
@@ -170,7 +170,7 @@ export const skills = [
     id: "docker",
     experience: "",
     href: "/technology/docker",
-    group: "bonuses",
+    category: "bonuses",
   },
   {
     title: "Figma",
@@ -178,7 +178,7 @@ export const skills = [
     id: "figma",
     experience: "",
     href: "/technology/figma",
-    group: "bonuses",
+    category: "bonuses",
   },
 ];
 
